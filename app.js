@@ -19,7 +19,7 @@ but1.addEventListener("click", () => {
     let x = i.toString().split("").reverse().join("");
 
     if (x == i) {
-      tex1.innerHTML += `${+x}                      `;
+      tex1.innerHTML += x + `\n`;
     }
     // }
   }
@@ -30,7 +30,7 @@ but2.addEventListener("click", () => {
   let b = +in2.value;
   for (let i = a; i <= b; i++) {
      if (perfectNumber(i)) {
-       tex2.innerHTML +=`${+i}                      `;
+       tex2.innerHTML += i + `\n`;
      }
   }
   
